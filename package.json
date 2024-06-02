@@ -15,7 +15,6 @@
     "styled-components": "^6.1.11",
     "web-vitals": "^4.0.1"
   },
-  "proxy": "https://cors-anywhere.herokuapp.com/https://openapi.naver.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

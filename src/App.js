@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import axios from 'axios';
-import { API_URL, CLIENT_ID, CLIENT_SECRET } from './config';
 import { useState, useEffect, useRef, useCallback } from 'react';
+
 
 export default function App() {
   const [color, setColor] = useState("red");
@@ -14,17 +14,13 @@ export default function App() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(API_URL, {
-          params: {
-            query: color,
-            display: 50,
-            start: page,
-          },
+        const response = await axios.get(`https://cors-anywhere.herokuapp.com/https://openapi.naver.com/v1/search/image?query=${color}&display=50&start=${page}`, {
           headers: {
-            'X-Naver-Client-Id': CLIENT_ID,
-            'X-Naver-Client-Secret': CLIENT_SECRET
+            'X-Naver-Client-Id': process.env.REACT_APP_NAVER_CLIENT_ID,
+            'X-Naver-Client-Secret': process.env.REACT_APP_NAVER_CLIENT_SECRET
           }
         });
+        console.log(response)
         setData(prevData => [...prevData, ...response.data.items]);
       } catch (error) {
         console.log('Error Fetching Data', error);
