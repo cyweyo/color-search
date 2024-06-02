@@ -15,12 +15,14 @@
     "styled-components": "^6.1.11",
     "web-vitals": "^4.0.1"
   },
-  "proxy": "https://openapi.naver.com",
+  "proxy": "https://cors-anywhere.herokuapp.com/https://openapi.naver.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +44,8 @@
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
