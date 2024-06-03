@@ -13,6 +13,8 @@ export default function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        console.log('Client ID:', process.env.REACT_APP_NAVER_CLIENT_ID);
+        console.log('Client Secret:', process.env.REACT_APP_NAVER_CLIENT_SECRET);
         setLoading(true);
         const response = await axios.get("/proxy/v1/search/image", {
           params: {
@@ -25,15 +27,16 @@ export default function App() {
             'X-Naver-Client-Secret': process.env.REACT_APP_NAVER_CLIENT_SECRET
           }
         });
-        console.log(response.data)
+        console.log(response.data);
         setData(prevData => [...prevData, ...response.data.items]);
       } catch (error) {
-        console.log('Error Fetching Data', error);
+        console.error('Error Fetching Data', error);
       }
       setLoading(false);
     };
     fetchData();
   }, [color, page]);
+
 
   const lastElementRef = useCallback(node => {
     if (loading) return;
