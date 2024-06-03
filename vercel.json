@@ -1,15 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/proxy/v1/:path*",
+      "source": "/proxy/:path*",
       "destination": "https://openapi.naver.com/:path*"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/manifest.json",
-      "destination": "/path/to/your/manifest.json",
-      "permanent": true
     }
   ]
 }
