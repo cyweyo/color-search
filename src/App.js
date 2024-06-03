@@ -14,7 +14,7 @@ export default function App() {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`https://cors-anywhere.herokuapp.com/https://openapi.naver.com/v1/search/image?query=${color}&display=50&start=${page}`, {
+        const response = await axios.get(`/v1/search/image?query=${color}&display=50&start=${page}`, {
           headers: {
             'X-Naver-Client-Id': process.env.REACT_APP_NAVER_CLIENT_ID,
             'X-Naver-Client-Secret': process.env.REACT_APP_NAVER_CLIENT_SECRET
