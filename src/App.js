@@ -63,7 +63,6 @@ export default function App() {
       </ButtonContainer>
       <CardContainer>
         {data.map((item, index) => {
-          console.log(item)
           if (data.length === index + 1) {
             return (
               <Card ref={lastElementRef} key={index}>
