@@ -13,10 +13,8 @@ export default function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        console.log('Client ID:', process.env.REACT_APP_NAVER_CLIENT_ID);
-        console.log('Client Secret:', process.env.REACT_APP_NAVER_CLIENT_SECRET);
         setLoading(true);
-        const response = await axios.get("/proxy/v1/search/image", {
+        const response = await axios.get("/v1/search/image", {
           params: {
             query: color,
             display: 50,
