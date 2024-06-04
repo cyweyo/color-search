@@ -1,71 +1,35 @@
-# Getting Started with Create React App
+4. README 파일의 구성
+   README 파일을 작성하는 방법에 있어 정해진 양식은 하나도 없다. 어떤 구성요소를 포함할지 모르겠다면 아래의 내용을 고려해볼 수 있다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+프로젝트 구성
+프로젝트 프로그램 설치방법
+프로젝트 프로그램 사용법
+저작권 및 사용권 정보
+프로그래머 정보
+버그 및 디버그
+참고 및 출처
+버전 및 업데이트 정보
+FAQ
+위와 같이 너무 딱딱한 형식이 싫다면, 프로젝트 소개, 개발 기간, 개발자 소개(역할분담 상세), 개발환경, 기술스택, 주요기능, 프로젝트 아키텍쳐 등을 포함하여 작성할 수도 있다.
 
-## Available Scripts
+확장자 역시 정해져있는 것은 아니고 다양한 형식을 사용할 수 있다. 다만, 일반적으로 .md 확장자를 사용할 것을 권장한다.
 
-In the project directory, you can run:
+# Color-Search 프로젝트 소개
 
-### `npm start`
+- 주어진 키워드에 맞는 사진을 보여주는 사이트
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 구현 기능
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. 네이버 api 활용
+2. 유저가 보는 화면이 하단에 닿았을 때 추가적인 사진 로드
+3. 키워드에 맞는 사진 로드
+4. 반응형 디자인
 
-### `npm test`
+## 개발 기간
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 2024.05.30(목) ~ 2024.06.04(화)
 
-### `npm run build`
+## 동작 gif
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# color-search
+<img src="https://github.com/memolovel/color-search/assets/112806153/63260d4b-1dd3-42b4-8541-a0a7a8d4af53">
+<img src="https://github.com/memolovel/color-search/assets/112806153/58fb41ce-fdce-49bb-bf26-b4474f70431a">
