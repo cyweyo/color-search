@@ -2,7 +2,7 @@
   "name": "homework",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://color-search-g6la29su9-zossbas-projects.vercel.app/",
+  "homepage": "https://color-search-rho.vercel.app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

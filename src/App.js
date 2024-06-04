@@ -25,7 +25,7 @@ export default function App() {
             'X-Naver-Client-Secret': process.env.REACT_APP_NAVER_CLIENT_SECRET
           }
         });
-        console.log(response.data);
+        console.log(response.data.items);
         setData(prevData => [...prevData, ...response.data.items]);
       } catch (error) {
         console.error('Error Fetching Data', error);
