@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/proxy/:path*",
+      "source": "/:path*",
       "destination": "https://openapi.naver.com/:path*"
     }
   ]
