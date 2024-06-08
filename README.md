@@ -12,9 +12,8 @@
 
 ## 개발 기간
 
-- 2024.05.30(목) ~ 2024.06.04(화)
+- 2024.06.05(수) ~ 2024.06.08(토)
 
 ## 동작 gif
 
-<img src="https://github.com/memolovel/color-search/assets/112806153/63260d4b-1dd3-42b4-8541-a0a7a8d4af53">
-<img src="https://github.com/memolovel/color-search/assets/112806153/58fb41ce-fdce-49bb-bf26-b4474f70431a">
+<img src="https://github.com/memolovel/recommend-look/assets/112806153/43e9b1ed-38b1-4bad-be5b-5b1d6ead517d">
